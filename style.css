@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto_Condensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto_Condensed-Bold.ttf') format('truetype');
+    font-weight:700;
+    font-style:normal;
+    font-display:swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+    outline: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/*section 1 css*/
+
+.icon{
+    padding:190px calc(50% - 640px) 426px;
+}
+
+.icon__title{
+    font:400 36px/1 "Roboto", sans-serif;
+width: 430px;
+    text-align: center;
+   margin: 0 auto;
+}
+
+.icon__list{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap:110px 24px;
+align-items: center;
+    margin-top: 70px;
+}
+
+.icon__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:26px;
+    width: 338px;
+        &:nth-child(1) {
+            > .icon__circles {
+                background-color: rgba(33, 247, 236, 1);
+            }
+        }
+    &:nth-child(2) {
+        > .icon__circles {
+            background-color: rgba(51, 211, 188, 1);
+        }
+    }
+    &:nth-child(3) {
+        > .icon__circles {
+            background-color: rgba(24, 165, 198, 1);
+        }
+    }
+    &:nth-child(4) {
+        > .icon__circles {
+            background-color:rgba(211, 143, 98, 1);
+        }
+    }
+    &:nth-child(5) {
+        > .icon__circles {
+            background-color: rgba(249, 76, 67, 1);
+        }
+    }
+    &:nth-child(6) {
+        > .icon__circles {
+            background-color: rgba(211, 153, 255, 1);
+        }
+    }
+
+.icon__circles{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
+
+.icon__span{
+font:700 30px/1 "Roboto", sans-serif;
+    text-align: center;
+}
+
+/*review css*/
+.review{
+padding:52px 80px 51.17px 80px;
+}
+.review__title{
+font:700 36px/1 "Roboto", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+.review__list{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+}
+
