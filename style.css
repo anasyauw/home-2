@@ -37,7 +37,7 @@ a{
 
 .icon__title{
     font:400 36px/1 "Roboto", sans-serif;
-width: 430px;
+max-width: 430px;
     text-align: center;
    margin: 0 auto;
 }
@@ -51,67 +51,132 @@ align-items: center;
     margin-top: 70px;
 }
 
-.icon__item{
+.icon__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:26px;
+    gap: 26px;
     width: 338px;
-        &:nth-child(1) {
-            > .icon__circles {
-                background-color: rgba(33, 247, 236, 1);
-            }
+
+    &:nth-child(1) {
+        > .icon__circles {
+            background-color: rgba(33, 247, 236, 1);
         }
+
+
+        .icon__span {
+            max-width: 146px;
+        }
+    }
+
     &:nth-child(2) {
         > .icon__circles {
             background-color: rgba(51, 211, 188, 1);
         }
     }
+
     &:nth-child(3) {
         > .icon__circles {
             background-color: rgba(24, 165, 198, 1);
         }
     }
+
     &:nth-child(4) {
         > .icon__circles {
-            background-color:rgba(211, 143, 98, 1);
+            background-color: rgba(211, 143, 98, 1);
         }
     }
+
     &:nth-child(5) {
         > .icon__circles {
             background-color: rgba(249, 76, 67, 1);
         }
     }
+
+    .icon__span {
+        max-width: 150px;
+    }
+
     &:nth-child(6) {
         > .icon__circles {
             background-color: rgba(211, 153, 255, 1);
         }
     }
 
-.icon__circles{
-    width:70px;
-    height:70px;
-    border-radius: 50%;
+    .icon__circles {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .icon__span {
+        font: 700 30px/1 "Roboto", sans-serif;
+        text-align: center;
+        max-width: 216px;
+    }
 }
 
-.icon__span{
-font:700 30px/1 "Roboto", sans-serif;
-    text-align: center;
-}
+    /*section 2 css*/
 
-/*review css*/
-.review{
-padding:52px 80px 51.17px 80px;
-}
-.review__title{
-font:700 36px/1 "Roboto", sans-serif;
-    text-align: center;
-    margin: 0 auto;
-}
-.review__list{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-}
+    .reviews {
+        display: flex;
+        padding:0 calc(50% - 640px);
+        flex-direction:column;
+        align-items: center;
+        background-color: rgba(240, 240, 240, 1);
+        height: 480px;
+    }
+
+    .reviews__image {
+        width: 288px;
+    }
+
+    .reviews__title {
+        font: 700 36px/1 "Roboto", sans-serif;
+        text-align: center;
+        max-width: 705px;
+        margin: -300px auto 0;
+    }
+
+    .reviews__list{
+        display: flex;
+     margin-top: 102px;
+    }
+
+    .reviews__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+    .reviews__text{
+        font: 700 22px/1 "Roboto", sans-serif;
+        letter-spacing: 0.6px;
+        text-align: center;
+        width: 248px;
+        margin-top: 35px;
+    }
+
+    .reviews__author{
+     font: 400 19px/1 "Roboto", sans-serif;
+        text-align: center;
+     margin-top: 34px;
+        max-width: 251px;
+    }
+
+    .review__btn{
+        color:rgba(0, 0, 0, 1);
+        font: 700 18px/1 "Roboto", sans-serif;
+        margin-top: 44px;
+        text-decoration:underline;
+    }
+
+
+
+
+
+
+
 
